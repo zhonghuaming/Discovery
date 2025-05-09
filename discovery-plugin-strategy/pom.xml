@@ -3,26 +3,32 @@
     xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <artifactId>discovery-plugin-strategy</artifactId>
     <name>Nepxion Discovery Plugin Strategy</name>
-    <packaging>jar</packaging>
+    <packaging>pom</packaging>
     <modelVersion>4.0.0</modelVersion>
-    <description>Nepxion Discovery is an enhancement for Spring Cloud Discovery</description>
+    <description>Nepxion Discovery is a solution for Spring Cloud with blue green, gray, weight, limitation, circuit breaker, degrade, isolation, monitor, tracing, dye, failover, async agent</description>
     <url>http://www.nepxion.com</url>
 
     <parent>
         <groupId>com.nepxion</groupId>
         <artifactId>discovery</artifactId>
-        <version>6.0.0</version>
+        <version>6.23.0</version>
     </parent>
 
-    <dependencies>
-        <dependency>
-            <groupId>${project.groupId}</groupId>
-            <artifactId>discovery-plugin-framework</artifactId>
-        </dependency>
-
-        <dependency>
-            <groupId>org.jboss.logging</groupId>
-            <artifactId>jboss-logging</artifactId>
-        </dependency>
-    </dependencies>
+    <modules>
+        <module>discovery-plugin-strategy-starter</module>
+        <module>discovery-plugin-strategy-starter-service</module>
+        <module>discovery-plugin-strategy-starter-zuul</module>
+        <module>discovery-plugin-strategy-starter-gateway</module>
+        <module>discovery-plugin-strategy-starter-hystrix</module>
+        <module>discovery-plugin-strategy-starter-opentelemetry</module>
+        <module>discovery-plugin-strategy-starter-opentracing</module>
+        <module>discovery-plugin-strategy-starter-skywalking</module>
+        <module>discovery-plugin-strategy-starter-sentinel-datasource</module>
+        <module>discovery-plugin-strategy-starter-sentinel-limiter</module>
+        <module>discovery-plugin-strategy-starter-sentinel-monitor</module>
+        <module>discovery-plugin-strategy-starter-sentinel-opentelemetry</module>
+        <module>discovery-plugin-strategy-starter-sentinel-opentracing</module>
+        <module>discovery-plugin-strategy-starter-sentinel-skywalking</module>
+        <module>discovery-plugin-strategy-starter-sentinel-micrometer</module>
+    </modules>
 </project>
